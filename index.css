@@ -1,0 +1,88 @@
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue:hsl(245, 75%, 52%);
+    --vPaleBlue:hsl(225, 100%, 98%);
+    --desatBlue:hsl(224, 23%, 55%);
+    --darkBlue:hsl(223, 47%, 23%);
+
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:16px;
+    
+}
+#card{
+    height:75vh;
+    width:380px;
+    background-color: white;
+   margin:100px auto;
+   text-align: center;
+ border-radius: 5%;
+ box-shadow: 5px 5px 20px  rgba(166, 163, 166, 0.3);
+
+}
+
+
+#header-img{
+    background-image: url("images/illustration-hero.svg");
+    width: 100%;
+    background-size: contain;
+    height: 30%;
+border-radius: 5% 5% 0 0;
+font-weight: 900;
+}
+#summ{
+   margin:20px;
+}
+
+h1{
+    margin-top:30px;
+    margin-bottom:20px;
+    color:var(--darkBlue);
+}
+
+p{
+    font-weight: 500;
+    color:var(--desatBlue);
+    line-height: 1.5;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+    background-color: var(--vPaleBlue);
+    margin:30px;
+    border-radius: 5%;
+    padding:10px;
+    height:80px;
+}
+
+.innerPar{
+    margin:0 0 0 15px;
+ 
+}
+a{
+    display: inline;
+}
+.ap{
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+#plan{
+    display: flex;
+    flex-direction: column;
+}
+
