@@ -20,17 +20,18 @@ body{
     background-image: url("images/pattern-background-desktop.svg");
     font-family: 'Red Hat Display', sans-serif;
     font-size:16px;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #inner{
     display: flex;
 }
 #card{
-    height:105vh;
+    height:95vh;
     width:380px;
     background-color: white;
-   margin:50px auto;
+   margin:100px auto;
    text-align: center;
  border-radius: 5%;
  box-shadow: 5px 5px 20px  #9d8aff62;
@@ -45,10 +46,9 @@ body{
     height: 30%;
 border-radius: 15px 15px 0 0;
 font-weight: 900;
+
 }
-#summ{
-   margin:20px;
-}
+
 #summary{
 
 width:280px;
@@ -56,7 +56,7 @@ margin:auto;
 }
 
 h1{
-    margin-top:30px;
+    margin-top:20px;
     margin-bottom:20px;
     color:var(--darkBlue);
 }
@@ -128,11 +128,14 @@ color: #7273E8;
     color:var(--desatBlue);
     font-weight: 700;
     font-size:12px;
-margin-bottom: 100px;
+
 }
 
 #cancel:hover{
     color:var(--darkBlue);
+    transition-duration: 0.1s;
+transition-timing-function: ease-in;
+transition-property: background-color;
 }
 
 #pay:hover{
@@ -142,3 +145,45 @@ transition-timing-function: ease-in;
 transition-property: background-color;
 }
 
+@media(max-width:376px){
+    #card{
+       margin-top:30%;
+        width: 85%;
+     height:30%;
+      background-size: cover;
+    }
+    #header-img{
+        background-size: cover;
+  height:200px;
+    }
+    #summ{
+        margin:10px;
+    }
+   
+    #summary{
+        max-width:100%;
+    }
+
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1{
+        font-size:20px;
+    }
+
+    #pricing{
+        margin:20px;
+
+    }
+    #pay{
+        max-width: 90%;
+    }
+
+    #music-img{
+        width:40px;
+        height: 100%;
+    }
+}
