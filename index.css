@@ -28,7 +28,7 @@ body{
     display: flex;
 }
 #card{
-    height:95vh;
+    height:75vh;
     width:380px;
     background-color: white;
    margin:100px auto;
@@ -148,13 +148,13 @@ transition-property: background-color;
 @media(max-width:376px){
     #card{
        margin-top:30%;
-        width: 85%;
-     height:30%;
-      background-size: cover;
+        width: 95%;
+     height:75vh;
+ 
     }
     #header-img{
         background-size: cover;
-  height:200px;
+  max-height:200px;
     }
     #summ{
         margin:10px;
@@ -162,6 +162,9 @@ transition-property: background-color;
    
     #summary{
         max-width:100%;
+    }
+    #pricing{
+        font-size: 14px;
     }
 
     body{
@@ -185,5 +188,19 @@ transition-property: background-color;
     #music-img{
         width:40px;
         height: 100%;
+    }
+}
+
+@media(min-width:1440px){
+    #card{
+        font-size: 18px;
+        width:500px;
+    }
+    #summary{
+        width:400px;
+        margin-bottom:15px;
+    }
+    #pricing{
+        margin:10px 60px 30px 60px;
     }
 }
