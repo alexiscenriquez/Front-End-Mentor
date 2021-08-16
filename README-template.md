@@ -37,7 +37,7 @@ See a color change while hovering over the Change, Payment and Cancel Buttons
 
 ## My process
 
-- The first thing I did was "Mark Up" the HTML file using divs, inputs, anchor  (a), paragraphs (p) and a header (h1) and added IDs on each of them.
+- The first thing I did was "Mark Up" the HTML file using divs, inputs, anchor  (a), paragraphs (p) and a header (h1) and added IDs on them.
 
 - I added a pricing div with a flex display that holds the music icon, the Annual Plan  and Change Button.
 
