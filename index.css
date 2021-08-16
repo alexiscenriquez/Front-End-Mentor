@@ -22,28 +22,37 @@ body{
     font-size:16px;
     
 }
+
+#inner{
+    display: flex;
+}
 #card{
-    height:75vh;
+    height:105vh;
     width:380px;
     background-color: white;
-   margin:100px auto;
+   margin:50px auto;
    text-align: center;
  border-radius: 5%;
- box-shadow: 5px 5px 20px  rgba(166, 163, 166, 0.3);
+ box-shadow: 5px 5px 20px  #9d8aff62;
 
 }
 
 
 #header-img{
     background-image: url("images/illustration-hero.svg");
-    width: 100%;
-    background-size: contain;
+       background-size: cover;
+    background-repeat:no-repeat ;
     height: 30%;
-border-radius: 5% 5% 0 0;
+border-radius: 15px 15px 0 0;
 font-weight: 900;
 }
 #summ{
    margin:20px;
+}
+#summary{
+
+width:280px;
+margin:auto;
 }
 
 h1{
@@ -61,13 +70,13 @@ p{
 #pricing{
     display: flex;
     flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items:center;
     background-color: var(--vPaleBlue);
     margin:30px;
     border-radius: 5%;
-    padding:10px;
-    height:80px;
+    padding:15px;
+    height:50px;
 }
 
 .innerPar{
@@ -84,5 +93,52 @@ a{
 #plan{
     display: flex;
     flex-direction: column;
+}
+
+#pay{
+    display: block;
+    margin:auto;
+    color:var(--vPaleBlue);
+    background-color:var(--brightBlue);
+    border:none;
+    border-radius: 7.5px;
+    height: 35px;
+    width:300px;
+    font-family: 'Red Hat Display';
+filter:drop-shadow(0 13px 10px #9d8aff94);
+margin-bottom:5% ;}
+
+#change{
+font-weight: 700;
+
+
+}
+#change:hover{
+color: #7273E8;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transition-property: color,text-decoration;
+    text-decoration: none;
+}
+
+#cancel{
+    background-color: transparent;
+    border:none;
+    font-family: "Red Hat Display";
+    color:var(--desatBlue);
+    font-weight: 700;
+    font-size:12px;
+margin-bottom: 100px;
+}
+
+#cancel:hover{
+    color:var(--darkBlue);
+}
+
+#pay:hover{
+    background-color: #7273E8;
+transition-duration: 0.1s;
+transition-timing-function: ease-in;
+transition-property: background-color;
 }
 
